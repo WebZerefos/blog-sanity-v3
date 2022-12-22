@@ -5,13 +5,15 @@ const Header = () => {
 	return (
 		<header className='flex items-center justify-between space-x-2 font-bold px-10 py-5'>
 			<div className='flex items-center space-x-2'>
-				<Image
-					src='/victor2.jpg'
-					width={50}
-					height={50}
-					alt=''
-					className='rounded-full'
-				/>
+				<Link href='/'>
+					<Image
+						src='/victor2.jpg'
+						width={50}
+						height={50}
+						alt=''
+						className='rounded-full object-fill aspect-square'
+					/>
+				</Link>
 				<h1>Victor Zerefos</h1>
 			</div>
 			<div>
