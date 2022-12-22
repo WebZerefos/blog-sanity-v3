@@ -10,6 +10,8 @@ const query = groq`
 } | order(_createdAt desc)
 `
 
+export const revalidate = 30 // linha para revalidar a pagina
+
 const Home = async () => {
 	const posts = await client.fetch(query)
 
