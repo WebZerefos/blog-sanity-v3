@@ -7,20 +7,25 @@ type Base = {
 }
 
 interface Post extends Base {
-	author: Author
-	body: Block[]
-	categories: Category[]
-	mainImage: Image
-	slug: Slug
 	title: string
 	description: string
+	slug: Slug
+	author: Author
+	mainImage: Image
+	categories: Category[]
+	body: Block[]
 }
 
 interface Author extends Base {
-	bio: Block[]
-	image: Image
 	name: string
 	slug: string
+	image: Image
+	bio: Block[]
+}
+
+interface Category extends Base {
+	description: string
+	title: string
 }
 
 interface Image {
@@ -46,11 +51,6 @@ interface Span {
 	_type: 'span'
 	marks: string[]
 	text: string
-}
-
-interface Category extends Base {
-	description: string
-	title: string
 }
 
 interface MainImage {

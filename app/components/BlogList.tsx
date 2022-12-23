@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import urlFor from '../../lib/urlFor'
-import { PortableText } from '@portabletext/react'
 import { FaArrowRight } from 'react-icons/fa'
 import ClientSideRoute from './ClientSideRoute'
 
